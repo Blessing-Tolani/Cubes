@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <link href = "https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel = "stylesheet">
+    <link href = "/style/photo.css" rel = "stylesheet">
+    <link href = "/style/flex-images.css" rel = "stylesheet">
+    <script src = "https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class = "grid-items">
+        <div class = "grid-item header">
+            <div class = "flex items-center justify-between h-16 pl-5  md:h-40 md:pl-10">
+                <div class = "flex">
+                    <i class="fas fa-cubes fa-2x  text-yellow-500"></i>
+                    <h1 class = "font-serif text-2xl pl-4">Photo<span class = "text-yellow-500 font-extrabold">Cubes</span></h1>
+                </div>
+                <!-- <div class = "flex pr-64 items-center">
+                    <h2 class = "font-serif text-xl  text-yellow-500"> Collections</h2>
+                    <div class = "dropdown">
+                        <button id="search"><i class=" fas fa-sort-down pl-3 pb-3 fa-2x hover:border-0 text-white bg-color-white hover:text-gray-900"></i></button>
+                        <div class="dropdown-content bg-gray-900 text-gray-400 ">
+                            <a onclick ="allow(this)" class = "hover:text-gray-900"  href="#">Backgrounds</a>
+                            <a onclick ="allow(this)" class = "hover:text-gray-900" href="#">Fashion</a>
+                            <a onclick ="allow(this)" class = "hover:text-gray-900" href="#">Nature</a>
+                            <a onclick ="allow(this)" class = "hover:text-gray-900" href="#">Science</a>
+                            <a onclick ="allow(this)" class = "hover:text-gray-900" href="#">Education</a>
+                            <a onclick ="allow(this)" class = "hover:text-gray-900" href="#">Feelings</a>
+                            <a onclick ="allow(this)" class = "hover:text-gray-900" href="#">Health</a>
+                            <a onclick ="allow(this)" class = "hover:text-gray-900" href="#">Science</a>
+                            <a onclick ="allow(this)" class = "hover:text-gray-900" href="#">Science</a>
+                            <a onclick ="allow(this)" class = "hover:text-gray-900" href="#">Science</a>
+                            <a onclick ="allow(this)" class = "hover:text-gray-900" href="#">Science</a>
+                            <a onclick ="allow(this)" class = "hover:text-gray-900" href="#">Science</a>
+                            <a onclick ="allow(this)" class = "hover:text-gray-900" href="#">Science</a>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+            <div>
+                <h1 class = "text-center text-white text-3xl font-semibold">Perfect and free high-resolution photos <br /> for an Adventure</h1>
+                <div   id = "formdiv" class = "bg-white">
+                    <form  class = "flex justify-around items-center h-full" id = "form" autocomplete="off" >
+                        <button id="search"><i class = "fas fa-search text-gray-500"></i></button>
+                        <input class =" placeholder-gray-900" type="text" id="picturetype" name="picturetype" placeholder="Search for high quality pictures" pattern = "[a-zA-Z/ ]+" title =  'Only Alphabets and Space Required' >
+                       
+                        <div class = "dropdown">
+                            <button id="search"><span id = "put" class = "pr-4 text-sm">All</span><i class=" fas fa-sort-down pb-3 fa-2x  text-gray-500 bg-color-white hover:text-gray-900"></i></button>
+                            <div class="dropdown-content bg-gray-900 text-gray-400 ">
+                                <a onclick ="pick(this)" class = "hover:text-gray-900"  href="#">All</a>
+                                <a onclick ="pick(this)" class = "hover:text-gray-900" href="#">Photo</a>
+                                <a onclick ="pick(this)" class = "hover:text-gray-900" href="#">Illustration</a>
+                                <a onclick ="pick(this)" class = "hover:text-gray-900" href="#">Vector</a>
+                              </div>
+                        </div>
+                        
+                    
+                    </form>
+                    <div class = "text-gray-400 pl-10">
+                        <p>Common: Christmas Love background Family Nature </p>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <div class = "grid-item">
+            
+            <div class="" id = "main" >
+                <!-- <div class="item" data-w="219" data-h="180"><img src="/images/1.jpg"></div>
+                <div class="item" data-w="279" data-h="180"><img src="/images/2.jpg"></div>
+                <div class="item" data-w="270" data-h="180"><img src="/images/3.jpg"></div>
+                <div class="item" data-w="270" data-h="180"><img src="/images/4.jpg"></div>
+                <div class="item" data-w="147" data-h="180"><img src="/images/5.jpg"></div>
+                <div class="item" data-w="276" data-h="180"><img src="/images/6.jpg"></div>
+                <div class="item" data-w="319" data-h="180"><img src="/images/7.jpg"></div>
+                <div class="item" data-w="270" data-h="180"><img src="/images/8.jpg"></div>
+                <div class="item" data-w="240" data-h="180"><img src="/images/9.jpg"></div>
+                <div class="item" data-w="270" data-h="180"><img src="/images/10.jpg"></div>
+                <div class="item" data-w="240" data-h="180"><img src="/images/11.jpg"></div>
+                <div class="item" data-w="270" data-h="180"><img src="/images/12.jpg"></div>
+                <div class="item" data-w="283" data-h="180"><img src="/images/13.jpg"></div>
+                <div class="item" data-w="271" data-h="180"><img src="/images/14.jpg"></div>
+                <div class="item" data-w="258" data-h="180"><img src="/images/15.jpg"></div> -->
+            </div>
+        </div>
+        <div class = "grid-item bg-yellow-500">3</div>
+    </div>
+</body>
+<script src = "/script/photo.js"></script>
+<script src = "/script/flex-images.min.js"></script>
+</html>

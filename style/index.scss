@@ -1,0 +1,41 @@
+body{
+    background-color:#CA8C77; 
+    background-repeat:no-repeat;
+    background-position: center;
+    background-image:url('/image/welcome2.jpg');
+    background-image: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)), url('/image/welcome2.jpg');
+   
+}
+.a, .b, .c{
+    animation:scale-in 2s cubic-bezier(0.250, 0.460, 0.450, 0.940 ) both;
+}
+.a{
+    animation-delay: 1s;
+}
+.b{
+    animation-delay: 3s;
+}
+.c{
+    animation-delay: 5s;
+}
+.sweet{
+    background-color:#6A1709;
+   border:none;
+}
+
+@keyframes scale-in{
+    0%{
+        transform:scale(0);
+        opacity:0;
+    }
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+@media screen and (max-width:900px){
+    // body{
+    //     background-position: center;
+    //     background-image: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)), url('/image/welcome2.jpg');
+    // }
+}

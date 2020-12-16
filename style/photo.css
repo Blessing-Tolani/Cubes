@@ -1,0 +1,94 @@
+body, html {
+  height: 100%;
+}
+
+.grid-items {
+  display: grid;
+  height: 100%;
+  grid-template-columns: auto;
+  grid-template-rows: 550px auto 70px;
+  grid-gap: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-items {
+    grid-template-rows: 400px auto 70px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid-items {
+    grid-template-rows: 300px auto 70px;
+  }
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/image/pee.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#formdiv {
+  width: 700px;
+  height: 65px;
+  border-radius: 2em;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+img {
+  width: 20%;
+  height: 30%;
+  object-fit: cover;
+  float: left;
+}
+
+#main {
+  overflow: hidden;
+}
+
+.select-items:hover {
+  color: black;
+}
+
+#picturetype {
+  width: 500px;
+  font-size: 15px;
+  height: 40px;
+  padding: 8px;
+  border: none;
+  text-align: left;
+}
+
+#search {
+  border: none;
+  font-size: 17px;
+  background-color: transparent;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
