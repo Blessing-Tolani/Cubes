@@ -22,15 +22,37 @@ function pick(elem){
         
         let hitslength = result.hits.length;
         for (let i = 0; i < hitslength; i++){
-            let sum2 = "cont" + `${i}`;
+            let sum1 = "cont" + `${i}`;
+            let sum2 = "come" + `${i}`;
+            let pid = "cone" + `${i}`;
+            let aid = "cup" + `${i}`
             let imageLink = result.hits[i].largeImageURL;
+            let userName = result.hits[i].user;
+            let downloadLink = result.hits[i].pageURL;
             // let image = document.createElement('img');
             // image.src = imageLink;
+            let div1 = document.createElement('div');
             let div2 = document.createElement('div');
+            let p = document.createElement('p');
+            let a = document.createElement('a');
+            let icon = document.createElement('i');
+            div1.setAttribute("id", sum1);
             div2.setAttribute("id", sum2);
-            div2.setAttribute("class", "imo");
-            document.getElementById("full").appendChild(div2);
-            document.getElementById(sum2).innerHTML = `<img src = ${imageLink}/>`;
+            p.setAttribute("id", pid);
+            a.setAttribute("id", aid);
+            a.setAttribute("href", downloadLink);
+            div1.setAttribute("class", "you");
+            div2.setAttribute("class", "pop flex justify-between   px-4 my-4");
+            p.setAttribute("class", "font-semibold text-white");
+            icon.setAttribute("class", "fas fa-arrow-down  cursor-pointer pt-1 text-white");
+            document.getElementById("full").appendChild(div1);
+            document.getElementById(sum1).innerHTML = `<img src = ${imageLink}/>`;
+            document.getElementById(sum1).appendChild(div2);
+            document.getElementById(sum2).appendChild(p);
+            document.getElementById(sum2).appendChild(a);
+            document.getElementById(aid).appendChild(icon);
+            document.getElementById(pid).innerHTML = userName;
+           
             
         }
        
@@ -63,15 +85,33 @@ form.onsubmit = async (e) => {
         
         let hitslength = result.hits.length;
         for (let i = 0; i < hitslength; i++){
-            let sum2 = "cont" + `${i}`;
+            let sum1 = "cont" + `${i}`;
+            let pid = "cone" + `${i}`;
+            let sum2 = "come" + `${i}`;
+            let aid = "cup" + `${i}`
             let imageLink = result.hits[i].largeImageURL;
-            let image = document.createElement('img');
-            // image.src = imageLink;
-            // let div2 = document.createElement('div');
-            // div2.setAttribute("id", sum2);
-            // div2.setAttribute("class", "imo");
-           // document.getElementById("full").appendChild(div2);
-            document.getElementById(sum2).innerHTML = `<img src = ${imageLink}/>`;
+             let userName = result.hits[i].user;
+             let downloadLink = result.hits[i].pageURL;
+
+            let div2 = document.createElement('div');
+            let p = document.createElement('p');
+            let a = document.createElement('a');
+            let icon = document.createElement('i');
+            div2.setAttribute("id", sum2);
+            p.setAttribute("id", pid);
+            a.setAttribute("id", aid);
+            a.setAttribute("href", downloadLink);
+         
+            div2.setAttribute("class", "pop flex justify-between   px-4 my-4");
+            p.setAttribute("class", "font-semibold text-white");
+            icon.setAttribute("class", "fas fa-arrow-down  cursor-pointer pt-1 text-white");
+           
+            document.getElementById(sum1).innerHTML = `<img src = ${imageLink}/>`;
+            document.getElementById(sum1).appendChild(div2);
+            document.getElementById(sum2).appendChild(p);
+            document.getElementById(sum2).appendChild(a);
+            document.getElementById(aid).appendChild(icon);
+            document.getElementById(pid).innerHTML = userName;
             
             
         }

@@ -1,9 +1,5 @@
 body {
-  background-color: #CA8C77;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("/image/welcome2.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("/image/welcome2.jpg");
+  background-color: #c1d5e6;
 }
 
 .a, .b, .c {
