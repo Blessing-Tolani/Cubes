@@ -69,7 +69,7 @@ form.onsubmit = async (e) => {
     console.log(Value);
         e.preventDefault();
    
-    url = `https://pixabay.com/api/?key=19373406-63903c7363f45bd42f1ffd34f&q=${Value}&per_page=200&video_type=${pictype}`;
+        url = `https://pixabay.com/api/videos/?key=19373406-63903c7363f45bd42f1ffd34f&q=${Value}&video_type=${pictype}&per_page=200`;
     
     let response = await fetch(url);
     let result = await response.json();
@@ -84,12 +84,12 @@ form.onsubmit = async (e) => {
     else{
         
         let hitslength = result.hits.length;
-        for (let i = 0; i < hitslength; i++){
+        for (let i = 0; i < 5; i++){
             let sum1 = "cont" + `${i}`;
             let pid = "cone" + `${i}`;
             let sum2 = "come" + `${i}`;
             let aid = "cup" + `${i}`
-            let imageLink = result.hits[i].largeImageURL;
+            let videoLink = result.hits[i].videos.small.url;
              let userName = result.hits[i].user;
              let downloadLink = result.hits[i].pageURL;
 
