@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link href = "https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel = "stylesheet">
+    <link href = "/style/video.css" rel = "stylesheet">
+    <link href = "/style/flex-images.css" rel = "stylesheet">
+    <script src = "https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "grid-items">
+        <div class = "grid-item header">
+            <video class = "dew"   playsinline muted loop autoplay type="video/mp4" id="some">
+                <source src = "/video/bgvideo.mp4">
+            </video>
+            <div >
+                <div class = "flex items-center justify-between h-16 pl-5  md:h-40 md:pl-10">
+                    <div class = "flex">
+                        <i class="fas fa-cubes sm:text-2xl md:text-3xl text-yellow-500 pt-1"></i>
+                        <h1 class = "font-serif text-white text-lg sm:text-xl md:text-2xl pl-2 ">Video<span class = "text-yellow-500 font-extrabold">Cubes</span></h1>
+                    </div>
+                    
+                </div>
+                <div>
+                    <h1 class = "but text-center text-white  sm:text-2xl md:text-3xl font-bold">Perfect and free high-resolution videos <br /> for an Adventure</h1>
+                    <div   id = "formdiv" class = "bg-white">
+                        <form  class = "flex justify-around items-center h-full" id = "form" autocomplete="off" >
+                            <button id="search"><i class = "fas fa-search text-gray-500"></i></button>
+                            <input class =" placeholder-gray-900 " type="text" id="picturetype" name="picturetype" placeholder="Search for high quality videos" pattern = "[a-zA-Z/ ]+" title =  'Only Alphabets and Space Required' >
+                        
+                            <div class = "dropdown">
+                                <button id="search"><span id = "put" class = " pr-2 sm:pr-4 text-sm">all</span><i class=" fas fa-sort-down   text-gray-500 bg-color-white hover:text-gray-900"></i></button>
+                                <div class="dropdown-content bg-gray-900 text-gray-400 ">
+                                    <a onclick ="pick(this)" class = "hover:text-gray-900"  href="#">all</a>
+                                    <a onclick ="pick(this)" class = "hover:text-gray-900" href="#">film</a>
+                                    <a onclick ="pick(this)" class = "hover:text-gray-900" href="#">animation</a>
+                                
+                                </div>
+                            </div>
+                            
+                        
+                        </form>
+                        <div class = "text-gray-400 pl-10">
+                            <p class = "com text-yellow-500 sm:text-sm">Common: Fashion music science Nature </p>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "grid-item bot"> 
+            <div class = "more" id ="full">
+               
+       
+            </div>
+        </div>
+        <div class = "grid-item">
+           
+            <div id="foot" class = " bg-gray-300 p-5">
+                <button id = "bee" class = "bg-gray-900 hover:bg-gray-700 mb-6" onclick=" returnHome()">Home</button>
+                <p><span class="foot "> &#169; 2020 Tolani </p>
+           </div> 
+        </div>
+    </div>
+</body>
+<script src = "/script/video.js"></script>
+<script src = "/script/flex-images.min.js"></script>
+</html>
