@@ -21,7 +21,7 @@ function pick(elem){
     else{
         
         let hitslength = result.hits.length;
-        for (let i = 0; i < 5; i++){
+        for (let i = 0; i < hitslength; i++){
             let sum1 = "cont" + `${i}`;
             let sum2 = "come" + `${i}`;
             let pid = "cone" + `${i}`;
@@ -84,7 +84,7 @@ form.onsubmit = async (e) => {
     else{
         
         let hitslength = result.hits.length;
-        for (let i = 0; i < 5; i++){
+        for (let i = 0; i < hitslength; i++){
             let sum1 = "cont" + `${i}`;
             let pid = "cone" + `${i}`;
             let sum2 = "come" + `${i}`;
