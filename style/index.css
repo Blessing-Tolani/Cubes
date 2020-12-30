@@ -7,19 +7,23 @@ body {
 }
 
 .a, .b, .c {
-  animation: scale-in 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: scale-in 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: scale-in 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .a {
-  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .b {
-  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .c {
-  animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 .sweet {
@@ -27,13 +31,29 @@ body {
   border: none;
 }
 
-@keyframes scale-in {
+@-webkit-keyframes scale-in {
   0% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
     opacity: 0;
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
   }
 }
+
+@keyframes scale-in {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=index.css.map */
